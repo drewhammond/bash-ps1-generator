@@ -1,0 +1,21 @@
+{
+  "name": "bash-ps1-generator",
+  "version": "0.0.0",
+  "homepage": "https://github.com/drewhammond/bash-ps1-generator",
+  "authors": [
+    "Drew Hammond <drew@alphagenetica.com>"
+  ],
+  "description": "Easy Bash PS1 prompt generator",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0"
+  }
+}
