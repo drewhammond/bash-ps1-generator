@@ -1,0 +1,11 @@
+{
+    "browser": true,
+    "curly": true,
+    "eqeqeq": true,
+    "jquery": true,
+    "node": true,
+    "undef": true,
+    "globals": {
+        "jQuery": true
+    }
+}

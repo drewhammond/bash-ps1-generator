@@ -1,0 +1,13 @@
+.btn.btn-transparent {
+//  background-color: transparentize(#fff, 0.3);
+  border: 1px solid $gray;
+  color: $gray-light;
+}
+
+.btn-transparent:hover {
+  color: lighten($gray-light, 10%);
+}
+
+.btn-transparent:active, .btn-transparent:focus {
+  color: $gray-lighter;
+}
