@@ -13,13 +13,13 @@ var gulp = require('gulp'),
 
 var config = {'environment': 'production'};
 
-var roots = {src: 'src', dist: 'dist'};
+var roots = {src: '.', dist: '.'};
 
 var paths = {
     dest: ['.', '!**/node_modules/**', '!**/vendor/**'],
-    assets: 'src/assets/**/*.*',
+    assets: 'assets/**/*.*',
     sass: [roots.src + '/assets/sass/**/*.scss', '!**/vendor/**'],
-    css: 'src/assets/css/*.css',
+    css: 'assets/css/*.css',
     scripts: [roots.src + '/assets/js/**/*.js', '!**/admin/**']
 };
 
