@@ -1,8 +1,24 @@
-bash-ps1-generator
+Bash PS1 Generator
 ==================
 
-Web-based interface to create and customize cool and colorful Bash prompts
+Lightweight web-based app to generate and customize cool and colorful Bash prompts. This project should be considered unstable
+at best and for all intents and purposes unworking at the moment. It's in need of some tender loving care if anyone wishes to contribute.
 
-### Development
+TODO / Wishlist
+---------------
 
-Run 'gulp' to start livereload server
+- Shell tool for local use or remote tool similar to ifconfig.me
+- Functional JS
+
+
+Development
+-----------
+
+Run `gulp` to start LiveReload server
+
+License
+-------
+
+This project is licensed under The MIT License (MIT)
+
+Copyright 2014 [Drew Hammond](https://drewhammond.me) / Alphagenetica Inc.
