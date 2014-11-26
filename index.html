@@ -116,17 +116,8 @@ export PS1="<span id="ps1-code"></span>";
 </div>
 
 <div id="stage" class="container-fluid">
-    <div class="col-md-10">
-        <samp id="code-stage">
-            <span id="ps1-string" class="unformatted">
-                <span id="str-separator-left">[</span><span id="str-username"></span><span
-                    id="str-separator-username-hostname">@</span><span id="str-hostname">web1</span><span
-                    id="str-pwd">~</span><span id="str-separator-right">]</span><span id="str-user-level">#</span>
-            </span>
-            <span id="command-string">whoami</span>
-        </samp>
-    </div>
-
+    <!-- Terminal Box -->
+    <div id="terminal"></div>
     <!-- Bottom half of the page -->
     <div class="settings-box container-fluid">
         <form id="form-color-scheme">
@@ -169,6 +160,8 @@ export PS1="<span id="ps1-code"></span>";
 </div>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/vendor/jquery.terminal/js/jquery.terminal-0.8.8.min.js"></script>
+<script src="assets/vendor/jquery.terminal/js/jquery.mousewheel-min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
