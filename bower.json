@@ -1,6 +1,6 @@
 {
   "name": "bash-ps1-generator",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "https://github.com/drewhammond/bash-ps1-generator",
   "authors": [
     "Drew Hammond <drew@alphagenetica.com>"
@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-sass-official": "~3.3.1"
+    "bootstrap-sass-official": "~3.3.1",
+    "jquery.terminal": "~0.8.8"
   }
 }

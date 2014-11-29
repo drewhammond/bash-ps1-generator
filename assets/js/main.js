@@ -1,12 +1,20 @@
 "use strict";
 $(function () {
 
-    // Cache selectors
+    // Default prompt
+    var bashPrompt = '[user@hostname ~]$ ';
+
+    // Terminal window
+    var terminal = $('#terminal').terminal(function (command, term) {
+    }, {
+        prompt: bashPrompt,
+        greetings: ''
+    });
+
     var $codeStage = $('#stage');
     var $colorSchemeForm = $('input[name=settings-color-scheme]', '#form-color-scheme');
-    var ps1StringHtml = document.getElementById('ps1-string').innerHTML = document.getElementById('ps1-string').innerHTML.replace(/(\r\n|\n|\r)/gm,"");
-    console.log(ps1StringHtml);
-    //var showTimestamp = $('input[name=option-show-timestamp]', '#form-prompt-config');
+
+    console.debug('Bash Prompt: ' + bashPrompt);
 
     // Change color scheme of preview window
     $colorSchemeForm.on('change', function (e) {
@@ -14,9 +22,25 @@ $(function () {
         $codeStage.attr('class', colorScheme);
     });
 
-    // Strip line breaks from preview panel (makes it easier to develop if we don't have to worry about fitting everything on a single line
-    console.log(ps1StringHtml);
-
-    // Handle changes to prompt config
-
 });
+
+/**
+ * Generate stylized string.
+ *
+ * @param string foreground color (hex, short hex or html name of the color)
+ * @param string background color (hex, short hex or html name of the color)
+ * @param string text Text to be stylized
+ * @param string modifiers Optional style modifiers
+ *      u - underline
+ *      s - strike
+ *      o - overline
+ *      i - italic
+ *      b - bold
+ *      g - glow (css text-shadow)
+ * @return string Formatted string ready for jQuery Terminal plugin (Style format: [[guib;<COLOR>;<BACKGROUND>]some text])
+ */
+function stylize(foreground, background, text, modifiers) {
+    modifiers = typeof modifiers !== 'undefined' ? modifiers : '';
+    var _output = '[[' + modifiers + ';' + foreground + ';' + background + ']' + text + ']';
+    return _output;
+}

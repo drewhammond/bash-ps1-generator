@@ -3,10 +3,12 @@
 Lightweight web-based app to generate and customize cool and colorful Bash prompts. This project should be considered unstable
 at best and for all intents and purposes unworking at the moment. It's in need of some tender loving care if anyone wishes to contribute.
 
+You can play around with the [live version](https://drewhammond.me/bash-ps1-generator/) online. Disclaimer: it's not functional.
+
 TODO / Wishlist
 ---------------
 
-- Shell tool for local use or remote tool similar to ifconfig.me
+- Shell tool for local use or remote tool similar to [ifconfig.me](http://ifconfig.me/)
 - Functional JS
 
 

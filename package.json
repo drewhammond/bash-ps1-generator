@@ -1,6 +1,6 @@
 {
   "url": "https://github.com/drewhammond/bash-ps1-generator",
-    "private": true,
+  "private": true,
   "dependencies": {
     "gulp": "~3.8.7",
     "gulp-autoprefixer": "~0.0.8",

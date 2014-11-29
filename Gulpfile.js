@@ -70,7 +70,7 @@ gulp.task('prod', ['styles'], function () {
 });
 
 
-gulp.task('copy', function() {
+gulp.task('copy', function () {
     gulp.src(roots.src)
         .pipe(gulp.dest(roots.dist));
 });
@@ -78,7 +78,7 @@ gulp.task('copy', function() {
 gulp.task('build', ['sass', 'scripts']);
 
 
-gulp.task('default', function() {
+gulp.task('default', function () {
     livereload.listen();
     gulp.watch(paths.assets, ['build']);
 });
